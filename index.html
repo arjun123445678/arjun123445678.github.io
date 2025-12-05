@@ -3,122 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thontla Nagarjuna Reddy | Embedded & AI Developer</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Thontla Nagarjuna Reddy | Embedded & Edge AI Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0; padding: 0;
+      background: #f8f9fa;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: #111;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo { font-size: 20px; font-weight: 600; }
+    nav ul { list-style: none; display: flex; gap: 25px; }
+    nav ul li a {
+      text-decoration: none; color: white;
+      font-weight: 400; transition: 0.3s;
+    }
+    nav ul li a:hover { color: #00d4ff; }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: white;
+    }
+    .profile-pic {
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #00d4ff;
+    }
+
+    h1, h2, h3 { margin: 10px 0; }
+    h2 { text-align: center; margin-top: 50px; }
+
+    #skills .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    #skills span {
+      background: #e9ecef;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    ul { width: 80%; margin: auto; line-height: 1.8; }
+
+    #contact ul li a { color: #0059ff; text-decoration: none; }
+    #contact ul li a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">Nagarjuna Reddy</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Nagarjuna Reddy</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Hero / About -->
-  <section id="about" class="hero">
-    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
-    <h1>Thontla Nagarjuna Reddy</h1>
-    <h3>Embedded Software Engineer | Embedded C, STM32, ARM Cortex-M</h3>
-    <p>Embedded Software Engineer with expertise in Embedded C, STM32, and ARM Cortex-M platforms, experienced in developing device drivers, real-time applications, RTOS, and hardware–software integration. Skilled in debugging, code optimization, and communication protocols. Passionate about designing and delivering reliable, high-performance embedded systems for industrial automation and IoT applications.</p>
+<!-- ABOUT -->
+<section id="about" class="hero">
+  <img src="assets/profile.jpg" class="profile-pic" alt="Profile Image">
+  <h1>Thontla Nagarjuna Reddy</h1>
+  <h3>Embedded Software Engineer | STM32 | RTOS | Edge AI</h3>
 
-    <h4>Education</h4>
-    <p>Velagapudi Ramakrishna Siddhartha Engineering College (VRSEC), B.Tech, ECE — CGPA: 8.62</p>
-  </section>
+  <p>
+    Embedded Software Engineer specializing in C/C++, ARM Cortex-M microcontrollers,
+    and real-time firmware development. Experienced in bare-metal driver development
+    (UART, SPI, I2C, GPIO, Timers, DMA), FreeRTOS applications, board bring-up, 
+    debugging, and deploying TinyML/Edge AI models on STM32. Passionate about designing
+    reliable systems for IoT, automation, and intelligent sensing.
+  </p>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <span>Embedded C / C++</span>
-      <span>Python (basic for AI/ML)</span>
-      <span>STM32 / ARM Cortex-M / PIC</span>
-      <span>RTOS / FreeRTOS</span>
-      <span>UART / SPI / I2C / ADC / TCP/IP</span>
-      <span>STM32CubeIDE / Keil / IAR / Typhoon HIL / MATLAB / Git</span>
-      <span>Verilog / SystemVerilog / RTL Design / Digital Logic / FSM</span>
-      <span>Testbench Writing / Simulation / GTKWave</span>
-    </div>
-  </section>
+  <h4>Education</h4>
+  <p>B.Tech in Electronics & Communication (ECE) — VRSEC | CGPA: 8.62</p>
+</section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects & Academic Work</h2>
-    
-    <div class="project-card">
-      <h3>Brain Tumor Classification on STM32</h3>
-      <p>Implemented a CNN-based classifier on STM32L4 for real-time brain tumor detection, optimized with STM32Cube.AI. Interfaced STM32 with custom GUI over USART for result visualization. (TinyML, CNN, STM32Cube.AI)</p>
-    </div>
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
 
-    <div class="project-card">
-      <h3>Smart Cattle Health Monitoring & Activity Classification</h3>
-      <p>Developed ML-based system on STM32 + MAX30205 for temperature and motion tracking. Integrated NanoEdge AI Studio models for anomaly detection and activity recognition on edge. Presented at IEEE INCET 2025.</p>
-    </div>
+    <span>Embedded C / C++</span>
+    <span>ARM Cortex-M / STM32</span>
+    <span>FreeRTOS / CMSIS-RTOS v2</span>
+    <span>Bare-metal Driver Development</span>
 
-    <div class="project-card">
-      <h3>Human Activity Recognition on STM32L475E-IOT01A</h3>
-      <p>Built embedded human activity recognition system with accelerometer + gyroscope sensors. Optimized audio + sensor fusion pipelines for low-latency edge inference with NanoEdge AI.</p>
-    </div>
+    <span>UART / SPI / I2C / DMA / Timers</span>
+    <span>Edge AI / TinyML / CMSIS-NN</span>
+    <span>Edge Impulse / NanoEdge AI Studio</span>
+    <span>MATLAB / Typhoon HIL</span>
 
-    <div class="project-card">
-      <h3>Digital Calculator using Verilog (Makerchip IDE)</h3>
-      <p>Designed and simulated a fully digital calculator implementing arithmetic, sequential, and combinational logic. Developed testbenches and verified functionality using waveform analysis.</p>
-    </div>
+    <span>STM32CubeIDE / Keil / IAR / Git</span>
+    <span>Oscilloscope / Logic Analyzer / JTAG</span>
 
-    <div class="project-card">
-      <h3>5G Communication Simulation using MATLAB</h3>
-      <p>Simulated multi-user 5G NR communication using OFDM and TDMA schemes. Analyzed NOMA vs OMA techniques, BER performance, power allocation, and outage probability over Rayleigh fading channels.</p>
-    </div>
-  </section>
+    <span>Verilog / SystemVerilog (Contest Work)</span>
+  </div>
+</section>
 
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>ARM Embedded Professional Certification (2025)</li>
-      <li>RISC-V CPU Design (2025)</li>
-      <li>Embedded Systems Developer (2024)</li>
-      <li>5G Communication using MATLAB (2025)</li>
-      <li>Embedded Systems Essentials with Arm: Getting Started / Practical with Hardware (2024)</li>
-      <li>Build Your First IoT Application on Arm (2024)</li>
-      <li>Machine Learning at the Edge on Arm: A Practical Introduction (2024)</li>
-      <li>Getting Started with AI on Jetson Nano (2024)</li>
-      <li>Deep Learning (2024)</li>
-      <li>Introduction to Linux (2025)</li>
-    </ul>
-  </section>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
 
-  <!-- Achievements -->
-  <section id="achievements">
-    <h2>Achievements & Competitions</h2>
-    <ul>
-      <li>Presented paper on “Efficient Cattle Health Monitoring Using AI” at IEEE GCAT 2024.</li>
-      <li>Presented “Smart Cattle Health Monitoring: A Heat Stress Management System” at IEEE INCET 2025.</li>
-      <li>Finalist: Edge Innovation Challenge 2024 (STMicroelectronics).</li>
-      <li>Participated in VLSI Design Contest 2024 (Kolkata) with STM32 AI-based system.</li>
-    </ul>
-  </section>
+  <div class="project-card">
+    <h3>Brain Tumor Classification on STM32</h3>
+    <p>
+      Deployed a CNN model on STM32L4 using STM32Cube.AI for real-time tumor detection. 
+      Built a custom USART GUI for visualization and optimized inference on Cortex-M.
+    </p>
+  </div>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <ul>
-      <li>Phone: +91-7032526205</li>
-      <li>Email: <a href="mailto:thontlanagarjunareddy333@gmail.com">thontlanagarjunareddy333@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/thontla-nagarjuna-reddy-631659290/" target="_blank">linkedin.com/in/thontla-nagarjuna-reddy</a></li>
-      <li>GitHub: <a href="https://github.com/arjun123445678" target="_blank">github.com/arjun123445678</a></li>
-    </ul>
-  </section>
+  <div class="project-card">
+    <h3>Smart Cattle Health Monitoring (IEEE INCET 2025)</h3>
+    <p>
+      Built an AI-enabled system using STM32 + MAX30205 for stress and anomaly detection. 
+      Integrated NanoEdge AI Studio models for real-time activity analysis.
+    </p>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Thontla Nagarjuna Reddy | Embedded & AI Developer</p>
-  </footer>
+  <div class="project-card">
+    <h3>Human Activity Recognition on STM32L475 IoT Board</h3>
+    <p>
+      Developed IMU-based HAR system using accelerometer & gyroscope fusion.
+      Achieved low-latency inference using optimized TinyML pipelines.
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>Digital Calculator using Verilog</h3>
+    <p>
+      Implemented arithmetic/logic modules in Verilog with FSM design. 
+      Verified using testbenches and waveform analysis in GTKWave.
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>5G Communication Simulation (MATLAB)</h3>
+    <p>
+      Simulated OFDM-based 5G NR communication with NOMA vs OMA comparisons, 
+      BER performance and Rayleigh fading channel modelling.
+    </p>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li>Qualcomm AI Edge Specialization (2025)</li>
+    <li>ARM Embedded Professional Certification (2025)</li>
+    <li>Linux Foundation — Introduction to Linux (2025)</li>
+    <li>Embedded Systems Developer — Microchip (2024)</li>
+    <li>AI on Jetson Nano | ML at the Edge (Arm)</li>
+  </ul>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <h2>Achievements & Competitions</h2>
+  <ul>
+    <li>Presented Smart Cattle Health Monitoring at IEEE INCET 2025.</li>
+    <li>Published Efficient Cattle Health Monitoring Using AI — IEEE GCAT 2024.</li>
+    <li>Finalist — STMicroelectronics Edge AI Innovation Challenge 2024.</li>
+    <li>Participant — VLSI Design Contest 2024.</li>
+    <li>Participant — ISRO Bharatiya Antariksha Challenge.</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <ul>
+    <li>📞 Phone: +91-7032526205</li>
+    <li>📧 Email: <a href="mailto:thontlanagarjunareddy333@gmail.com">thontlanagarjunareddy333@gmail.com</a></li>
+    <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/thontla-nagarjuna-reddy-631659290/" target="_blank">linkedin.com/in/thontla-nagarjuna-reddy</a></li>
+    <li>💻 GitHub: <a href="https://github.com/arjun123445678" target="_blank">github.com/arjun123445678</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Nagarjuna Reddy | Embedded & Edge AI Engineer</p>
+</footer>
 
 </body>
 </html>
